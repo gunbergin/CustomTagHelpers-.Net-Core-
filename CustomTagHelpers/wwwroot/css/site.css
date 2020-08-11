@@ -1,0 +1,144 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+.checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: solid 1px #99c2e1;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: solid 1px #99c2e1;
+    cursor: pointer;
+}
+
+.checkmarkContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+/* On mouse-over, add a grey background color */
+.checkmarkContainer:hover input ~ .checkmark {
+    background-color: #71be44;
+}
+
+/* When the radio button is checked, add a blue background */
+.checkmarkContainer input:checked ~ .checkmark {
+    background-color: #71be44;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.checkmarkContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.checkmarkContainer .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.ocean-blue {
+    color: #0066b3 !important;
+}
+
+.floating-label.has-value label, .floating-label.is-focused label {
+    top: -5px;
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.input-text {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+.seperator{
+    height: 1px;
+    background-color: #dbe1e3;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

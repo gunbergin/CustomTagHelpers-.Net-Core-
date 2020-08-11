@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model UserInfo;
+
+<div class="col-lg-6 offset-lg-3 col-8 offset-2">
+    <form method="post">
+        <textbox asp-for="Name" maxlenght="12" input="text"></textbox>
+        <textbox asp-for="Surname" input="text"></textbox>
+
+        <div class="row15 mb-2 pt-3 pl-0 form-text font-size-16 text-bold-500">
+            Gender
+        </div>
+        <radio-button asp-for="Gender" value="F" text="Female"></radio-button>
+
+
+        <div class="row seperator"></div>
+
+        <radio-button asp-for="Gender" value="M" text="Male"></radio-button>
+
+        <textbox asp-for="Info" label-text="Price Info"  isreadonly="true"></textbox>
+        <check-box asp-for="Confirm" text="Confirm Your Information"></check-box>
+    </form>
+</div>
